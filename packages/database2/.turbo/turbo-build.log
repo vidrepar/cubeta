@@ -1,0 +1,32 @@
+
+
+> @repo/database@1.0.0 prebuild
+> npm run generate
+
+[1G[0K
+> @repo/database@1.0.0 generate
+> prisma generate
+
+[1G[0K[2mEnvironment variables loaded from .env[22m
+[2mPrisma schema loaded from prisma/schema.prisma[22m
+
+
+✔ Generated [1mPrisma Client[22m (v6.5.0)[2m to ./generated/client[22m in 38ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Curious about the SQL queries Prisma ORM generates? Optimize helps you enhance your visibility: https://pris.ly/tip-2-optimize
+
+[1G[0K⠙[1G[0K[1G[0K⠙[1G[0K
+> @repo/database@1.0.0 build
+> tsup src/*
+
+[1G[0K⠙[1G[0K[34mCLI[39m Building entry: src/client.ts, src/seed.ts
+[34mCLI[39m Using tsconfig: tsconfig.json
+[34mCLI[39m tsup v8.4.0
+[34mCLI[39m Target: node16
+[34mCJS[39m Build start
+[32mCJS[39m [1mdist/seed.js   [22m[32m281.80 KB[39m
+[32mCJS[39m [1mdist/client.js [22m[32m281.48 KB[39m
+[32mCJS[39m ⚡️ Build success in 25ms
+[1G[0K⠙[1G[0K

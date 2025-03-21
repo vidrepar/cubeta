@@ -28,5 +28,6 @@
       "cache": false
     },
     "lint": {}
-  }
+  },
+  "globalEnv": ["DATABASE_URL", "DATABASE_URL_2"]
 }
