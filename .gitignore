@@ -12,3 +12,5 @@ generated/
 # IDE files
 .vscode/
 .idea/
+
+.vercel
