@@ -1,13 +1,16 @@
-import { prisma } from "@repo/database";
-import * as prisma2 from "@repo/database2";
+import * as db1 from "@repo/database";
+import * as db2 from "@repo/database2";
+import prisma from "../lib/prisma";
 
 export default async function IndexPage() {
-  const users = await prisma.user.findMany();
-  const users2 = await prisma2.prisma.user.findMany({
+  const users = await db1.prisma.user.findMany();
+  const users2 = await db2.prisma.user.findMany({
     include: {
       posts: true,
     },
   });
+  const complexities = await prisma.complexity.findMany();
+
   return (
     <div>
       <h1>Hello World</h1>
@@ -25,6 +28,7 @@ export default async function IndexPage() {
           2
         )}
       </pre>
+      <pre>{JSON.stringify(complexities, null, 2)}</pre>
     </div>
   );
 }

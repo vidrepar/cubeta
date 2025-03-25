@@ -30,5 +30,5 @@
     },
     "lint": {}
   },
-  "globalEnv": ["DATABASE_URL", "DATABASE_URL_2"]
+  "globalEnv": ["DATABASE_URL", "DATABASE_URL_2", "DATABASE_URL_WEB"]
 }
